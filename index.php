@@ -1,9 +1,10 @@
 <?php
 echo '<!DOCTYPE html><html><body><h1>test</h1><h3>
 <form action="upload.php" method="post" enctype="multipart/form-data">
-	  Select image to upload:
-	    <input type="file" name="fileToUpload" id="fileToUpload">
-	      <input type="submit" value="Upload Image" name="submit">
+	  Wählen Sie hier die XML-Datei zum Upload aus:<br>
+		<inline><h2>Preisliste:</h2><input type="file" name="userfiles[]" /></inline><br>
+		<inline><h2>Artikelliste:</h2><input type="file" name="userfiles[]" /></inline><br><br>
+		<input type="submit" value="Hochladen" name="sumit"><br><br>
 	      </form>';
 $servername = "localhost";
 $username = "admin";
